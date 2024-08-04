@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech On Road Show Android and Iphone</title>
+
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="asset/bootstrap/bootstrap.min.css" />
+
+    <!-- main css  -->
+    <link rel="stylesheet" href="asset/main_style.css" />
+
+    <!-- scss css  -->
+    <link rel="stylesheet" href="asset/style.css" />
+
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!-- swiperjs  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- favicon  -->
+    <link
+      rel="shortcut icon"
+      href="asset/photo/favicon.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <div class="container text-dark">
+      <!-- navbar  -->
+      <div class="nav_bar ms-1 me-1">
+        <nav class="navbar navbar-expand-custom navbar-mainbg">
+          <a class="navbar-brand navbar-logo" href="index.html"
+            ><img
+              height="32"
+              width="110"
+              src="asset/photo/logo.png"
+              alt="Tech On Road Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars text-white"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <div class="hori-selector">
+                <div class="left"></div>
+                <div class="right"></div>
+              </div>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-house-user"></i>Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="show_phone.html"
+                  ><i class="fa-brands fa-apple"></i>Iphone</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-brands fa-android"></i>Android</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="show_smartwatch.html"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-smartwatch"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M9 5a.5.5 0 0 0-1 0v3H6a.5.5 0 0 0 0 1h2.5a.5.5 0 0 0 .5-.5V5z"
+                    />
+                    <path
+                      d="M4 1.667v.383A2.5 2.5 0 0 0 2 4.5v7a2.5 2.5 0 0 0 2 2.45v.383C4 15.253 4.746 16 5.667 16h4.666c.92 0 1.667-.746 1.667-1.667v-.383a2.5 2.5 0 0 0 2-2.45V8h.5a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5H14v-.5a2.5 2.5 0 0 0-2-2.45v-.383C12 .747 11.254 0 10.333 0H5.667C4.747 0 4 .746 4 1.667zM4.5 3h7A1.5 1.5 0 0 1 13 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 11.5v-7A1.5 1.5 0 0 1 4.5 3z"
+                    />
+                  </svg>
+                  Smartwatch</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-tablet"></i>Tablet</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-headphones"></i>Headphone</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fa-solid fa-motorcycle"></i>Bike</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- breaking news  -->
+      <div class="breaking_news ms-1 me-1 bg animated-div">
+        <div class="row">
+          <div class="col-md-12 col-12">
+            <div
+              class="d-flex justify-content-between align-items-center breaking-news bg-white"
+            >
+              <div
+                class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-danger py-2 text-white px-2 news"
+              >
+                <span class="d-flex align-items-center"
+                  >&nbsp;Tech On Track</span
+                >
+              </div>
+              <marquee
+                class="news-scroll"
+                behavior="scroll"
+                direction="left"
+                onmouseover="this.stop();"
+                onmouseout="this.start();"
+              >
+                <a href="#"
+                  >Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
+                </a>
+                <span class="dot"></span>
+                <a href="#"
+                  >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut
+                </a>
+                <span class="dot"></span>
+                <a href="#"
+                  >Duis aute irure dolor in reprehenderit in voluptate velit
+                  esse
+                </a>
+              </marquee>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- search bar  -->
+      <div class="searchbar m-1 animated-div">
+        <div class="input-group">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search..."
+            aria-label="Search"
+            aria-describedby="basic-addon2"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="button">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- social icons  -->
+      <div id="social-platforms">
+        <a class="btn btn-icon btn-facebook animated-div" href="#"
+          ><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a
+        >
+        <a class="btn btn-icon btn-youtube animated-div" href="#"
+          ><i class="fa-brands fa-youtube"></i><span>Youtube</span></a
+        >
+        <a class="btn btn-icon btn-twitter animated-div" href="#"
+          ><i class="fa-brands fa-twitter"></i><span>Twitter</span></a
+        >
+        <a class="btn btn-icon btn-googleplus animated-div" href="#"
+          ><i class="fa-brands fa-google-plus"></i><span>Google+</span></a
+        >
+        <a class="btn btn-icon btn-pinterest animated-div" href="#"
+          ><i class="fa-brands fa-pinterest"></i><span>Pinterest</span></a
+        >
+        <a class="btn btn-icon btn-linkedin animated-div" href="#"
+          ><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a
+        >
+      </div>
+
+      <!-- display blog  -->
+      <div class="row animated-div">
+        <div class="col-md-6 col-12">
+          <center>
+            <img
+              class="img-fluid display-image"
+              src="asset/photo/pic 1.jpg"
+              alt="Iphone"
+              height="300px"
+              width="500px"
+            />
+            <div class="d-md-none d-block m-3">
+              <a class="btn btn-primary" href="">Watch Review</a>
+            </div>
+          </center>
+        </div>
+        <!-- main spec  -->
+        <div class="col-md-6 col-12 mt-3 d-md-block d-none pt-3">
+          <h4><b>Iphone 15 Pro Max</b></h4>
+          <table class="table">
+            <tbody>
+              <tr class="animated-div">
+                <td>
+                  <b
+                    ><i class="fa-solid fa-calendar-days"></i>Released Date :</b
+                  >
+                </td>
+                <td>22 September, 2023</td>
+              </tr>
+              <tr class="animated-div">
+                <td>
+                  <b><i class="fa-solid fa-landmark"></i>Brand :</b>
+                </td>
+                <td>Iphone</td>
+              </tr>
+              <tr class="animated-div">
+                <td>
+                  <b><i class="fa-solid fa-database"></i>Ram / Rom :</b>
+                </td>
+                <td>8 / 256</td>
+              </tr>
+              <tr class="animated-div">
+                <td>
+                  <b><i class="fas fa-ruler"></i>Dimention :</b>
+                </td>
+                <td>221g, 8.3mm thickness</td>
+              </tr>
+              <tr class="animated-div">
+                <td>
+                  <b><i class="fas fa-ruler"></i>Display:</b>
+                </td>
+                <td>Retina LPTO OLED</td>
+              </tr>
+              <tr class="animated-div">
+                <td>
+                  <b><i class="fa-solid fa-camera"></i>Camera :</b>
+                </td>
+                <td>48 MP</td>
+              </tr>
+              <tr class="animated-div">
+                <td>
+                  <b><i class="fa-solid fa-battery-quarter"></i>Battery :</b>
+                </td>
+                <td>4441 mAh</td>
+              </tr>
+              <tr class="animated-div">
+                <td>
+                  <b
+                    ><i class="fa-solid fa-bangladeshi-taka-sign"></i>Price :</b
+                  >
+                </td>
+                <td>115000 ৳</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#" class="btn btn-primary">Watch Review</a>
+        </div>
+      </div>
+
+      <!-- full spec  -->
+      <div class="full-spec mt-3 mb-3">
+        <div class="row">
+          <div class="col-md-8 col-12">
+            <table class="full">
+              <tbody>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">
+                      Samsung Galaxy Phone Specification</span
+                    >
+                  </th>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr class="animated-div">
+                  <td>Network</td>
+                  <td>GSM / HSPA / LTE</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>2G bands</td>
+                  <td>GSM 850 / 900 / 1800 / 1900 - SIM 1 &amp; SIM 2</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>3G bands</td>
+                  <td>HSDPA 850 / 900 / 1900 / 2100</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>4G bands</td>
+                  <td>
+                    LTE band 1(2100), 3(1800), 7(2600), 38(2600), 39(1900),
+                    40(2300), 41(2500) - SM-J7008
+                  </td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Speed</td>
+                  <td>HSPA 21.1/5.76 Mbps</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>GPRS</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>EDGE</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">OS And Hardware</span>
+                  </th>
+                </tr>
+                <tr class="animated-div">
+                  <td>OS</td>
+                  <td>Android OS, v5.1.1 (Lollipop) || Custom UI</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Processor</td>
+                  <td>
+                    <span style="text-align: justify"
+                      >Quad-core 1.5 GHz Cortex-A53</span
+                    >
+                  </td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Chipset</td>
+                  <td>Qualcomm MSM8916 Snapdragon 410</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>GPU</td>
+                  <td>Adreno 306</td>
+                </tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">Body</span>
+                  </th>
+                </tr>
+                <tr class="animated-div">
+                  <td>Dimensions</td>
+                  <td>134.5 x 65.2 x 7.3 mm (5.30 x 2.57 x 0.29 in)</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Weight</td>
+                  <td>132 g (4.66 oz)</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Colors</td>
+                  <td>White, Black, Gold</td>
+                </tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">Display</span>
+                  </th>
+                </tr>
+                <tr class="animated-div">
+                  <td>Type</td>
+                  <td>Super AMOLED capacitive touchscreen, 16M colors</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Screen Size</td>
+                  <td>4.7 inches (~69.4% screen-to-body ratio)</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Resolution</td>
+                  <td>720 x 1280 pixels (~312 ppi pixel density)</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Multitouch</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Protection</td>
+                  <td>Corning Gorilla Glass 4</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Sensors</td>
+                  <td>Accelerometer, Proximity, Compass</td>
+                </tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">Memory</span>
+                  </th>
+                </tr>
+                <tr bgcolor="#ffffff" class="config_table animated-div">
+                  <td>Card slot</td>
+                  <td>microSD, up to 128 GB</td>
+                </tr>
+                <tr bgcolor="#FFFFFF" class="config_table animated-div">
+                  <td>Internal</td>
+                  <td>16 GB</td>
+                </tr>
+                <tr bgcolor="#ffffff" class="config_table animated-div">
+                  <td>RAM</td>
+                  <td>1.5 GB</td>
+                </tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">Camera</span>
+                  </th>
+                </tr>
+                <tr class="animated-div">
+                  <td>Primary</td>
+                  <td>13 MP, 4128 x 3096 pixels, autofocus, LED flash</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Features</td>
+                  <td>Geo-tagging, touch focus, face detection, panorama</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Video</td>
+                  <td>1080p@30fps</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Secondary</td>
+                  <td>5 MP</td>
+                </tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">Multimedia</span>
+                  </th>
+                </tr>
+                <tr class="animated-div">
+                  <td>Music play</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Radio</td>
+                  <td>FM Radio</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Games</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Alert types</td>
+                  <td>Vibration; MP3, WAV ringtones</td>
+                </tr>
+                <tr bgcolor="#ffffff" class="config_table animated-div">
+                  <td>Loudspeaker</td>
+                  <td>Yes</td>
+                </tr>
+                <tr bgcolor="#ffffff" class="config_table animated-div">
+                  <td>3.5mm jack</td>
+                  <td>Yes</td>
+                </tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">Battery and Power</span>
+                  </th>
+                </tr>
+                <tr class="animated-div">
+                  <td>Type</td>
+                  <td>Removable Li-Ion 3000 mAh battery</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Stand-by</td>
+                  <td>42 Hours</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Talk time</td>
+                  <td>12 Hours</td>
+                </tr>
+                <tr bgcolor="#ffffff" class="config_table"></tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">Releasing Date</span>
+                  </th>
+                </tr>
+                <tr class="animated-div">
+                  <td>Announced</td>
+                  <td>2015, December</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Status</td>
+                  <td>Releasing on 2015, December</td>
+                </tr>
+                <tr bgcolor="#ffffff" class="config_table"></tr>
+                <tr class="animated-div">
+                  <th colspan="2" scope="col" style="text-align: center">
+                    <span style="font-size: large">Expected Price</span>
+                  </th>
+                </tr>
+                <tr class="animated-div">
+                  <td>US Dollor</td>
+                  <td>$200</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Bangladeshi Taka</td>
+                  <td>BDT15,000</td>
+                </tr>
+                <tr class="animated-div">
+                  <td>Indian Rs.</td>
+                  <td>Rs. 13,000</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- accordion  -->
+            <div class="pros-cons mt-3 mb-3">
+              <center class="animated-div">
+                <h3 style="background-color: blueviolet; color: aliceblue">
+                  F.A.Q
+                </h3>
+              </center>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item animated-div">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <strong>How is Iphone 15 Pro Max ?</strong>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      The iPhone 15 Pro Max is the latest flagship smartphone
+                      from Apple. It has a 6.7-inch OLED display, a titanium
+                      frame, a USB-C port, and a new Action button that can be
+                      customized to perform different tasks. It also has a
+                      powerful A17 Pro chip, a long-lasting battery, and a
+                      triple-camera system with a 5x optical zoom lens.
+                      According to some reviews, the iPhone 15 Pro Max is the
+                      best iPhone you can buy, but it also has some drawbacks,
+                      such as a higher price tag, slow charging, and limited
+                      digital zoom capabilities. Here are some of the pros and
+                      cons of the iPhone 15 Pro Max based on the web search
+                      results
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item animated-div">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <strong> Is it worthy to buy Iphone 15 Pro Max ?</strong>
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      That depends on your personal preferences and needs. The
+                      iPhone 15 Pro Max is a premium smartphone that offers many
+                      features and benefits, but it also comes with a high cost
+                      and some limitations. If you value a large and vibrant
+                      display, a durable and elegant design, a fast and smooth
+                      performance, a long-lasting battery, and a versatile
+                      camera system, then you might find the iPhone 15 Pro Max
+                      worth buying. However, if you are looking for a more
+                      affordable option, a faster charging speed, a more
+                      flexible Action button, or a better digital zoom
+                      capability, then you might want to consider other
+                      alternatives. Ultimately, the decision is up to you. You
+                      can read more about the iPhone 15 Pro Max and compare it
+                      with other smartphones on the web . I hope this helps. 😊
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-12 mt-md-0 mt-4">
+            <!-- Card-->
+            <div class="card rounded shadow-sm border-1">
+              <div class="card-body p-4">
+                <img
+                  src="asset/photo/pic 1.jpg"
+                  alt=""
+                  class="img-fluid d-block mx-auto mb-3 animated-div"
+                />
+                <div class="animated-div">
+                  <h5><a href="#" class="text-dark">Iphone 15 Pro Max</a></h5>
+                  <p class="small text-muted font-italic">
+                    <b>Ram:</b> 8GB <b> Rom:</b>256GB <b> Camera:</b>48MP
+                    <b> Battery: </b>4441mAh
+                  </p>
+                </div>
+                <div class="row animated-div">
+                  <div class="col-md-6 col-6">
+                    <a
+                      href=""
+                      class="btn btn-info d-flex justify-content-center align-items-center"
+                      >Explore</a
+                    >
+                  </div>
+                  <div class="col-md-6 col-6">
+                    <a
+                      href=""
+                      class="btn btn-primary d-flex justify-content-center align-items-center"
+                      >Review</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end card  -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- test  -->
+
+    <!-- bootstrap  -->
+    <script src="asset/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- jquery  -->
+    <script src="asset/jquery/jquery.js"></script>
+    <!-- swiperjs  -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- anime js  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- main css  -->
+    <script src="asset/script.js"></script>
+  </body>
+</html>
