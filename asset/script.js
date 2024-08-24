@@ -62,8 +62,11 @@ jQuery(document).ready(function ($) {
 var swiper = new Swiper(".swiper-container", {
     loop: true, // Loop the slides
     effect: "fade",
+    autoHeight: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
     autoplay: {
-        delay: 2000, // Auto-scroll delay in milliseconds (3 seconds in this example)
+        delay: 3000, // Auto-scroll delay in milliseconds (3 seconds in this example)
     },
 });
 
@@ -83,6 +86,10 @@ const observer = new IntersectionObserver((entries, observer) => {
 elements.forEach((element) => {
     observer.observe(element);
 });
+
+
+// year 
+document.getElementById("currentYear").textContent = new Date().getFullYear();
 
 
 
